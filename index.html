@@ -167,11 +167,32 @@
       color: var(--muted);
     }
 
+
     footer {
       padding: 25px 5vw;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
       color: #929892;
       font-size: 12px;
+    }
+
+    footer nav {
+      display: flex;
+      gap: 14px;
+    }
+
+    footer a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    footer a:hover,
+    footer a:focus-visible {
+      color: var(--green);
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
@@ -246,7 +267,11 @@
     </main>
 
     <footer>
-      © 2026 Canny
+      <span>© 2026 Canny</span>
+      <nav aria-label="Rechtliche Hinweise">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
     </footer>
 
   </div>
