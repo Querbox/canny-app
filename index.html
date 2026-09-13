@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Canny – Cannabis neu gedacht</title>
+  <meta name="description" content="Canny wird neu gedacht. Eine moderne Plattform für die Cannabis-Community.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f5f5ef;
+      --text: #172019;
+      --muted: #6d756e;
+      --green: #315c43;
+      --green-light: #dfe9df;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      padding: 28px 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: var(--green);
+    }
+
+    .badge {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green);
+      background: var(--green-light);
+      padding: 9px 14px;
+      border-radius: 100px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 70px 5vw 100px;
+    }
+
+    .hero {
+      width: 100%;
+      max-width: 920px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--green);
+      margin-bottom: 28px;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    h1 {
+      font-size: clamp(52px, 9vw, 105px);
+      line-height: .92;
+      letter-spacing: -5px;
+      font-weight: 800;
+      max-width: 900px;
+      margin: 0 auto 30px;
+    }
+
+    h1 span {
+      color: var(--green);
+    }
+
+    .intro {
+      max-width: 580px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .card {
+      margin: 55px auto 0;
+      max-width: 540px;
+      padding: 26px;
+      background: var(--white);
+      border-radius: 20px;
+      border: 1px solid rgba(23, 32, 25, .07);
+      text-align: left;
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .status {
+      font-size: 12px;
+      color: var(--green);
+      background: var(--green-light);
+      padding: 6px 10px;
+      border-radius: 100px;
+      font-weight: 600;
+    }
+
+    .progress {
+      height: 6px;
+      background: #edf0eb;
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .progress div {
+      width: 34%;
+      height: 100%;
+      background: var(--green);
+      border-radius: inherit;
+    }
+
+    .card-text {
+      margin-top: 15px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 25px 5vw;
+      text-align: center;
+      color: #929892;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 22px 22px;
+      }
+
+      main {
+        padding: 50px 22px 80px;
+      }
+
+      h1 {
+        letter-spacing: -3px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      .card {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header>
+      <div class="logo">cann<span>y</span></div>
+      <div class="badge">Etwas Neues entsteht</div>
+    </header>
+
+    <main>
+      <section class="hero">
+
+        <div class="eyebrow">
+          <span class="dot"></span>
+          Canny wird neu gedacht
+        </div>
+
+        <h1>
+          Cannabis.<br>
+          <span>Einfach anders.</span>
+        </h1>
+
+        <p class="intro">
+          Wir bauen Canny gerade von Grund auf neu.
+          Eine moderne Plattform für die Cannabis-Community –
+          mit Wissen, Austausch und einem bewussteren Umgang.
+        </p>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-title">Neues Canny</div>
+            <div class="status">In Entwicklung</div>
+          </div>
+
+          <div class="progress">
+            <div></div>
+          </div>
+
+          <p class="card-text">
+            Wir arbeiten gerade an der nächsten Version.
+            Mehr gibt es schon bald.
+          </p>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Canny
+    </footer>
+
+  </div>
+
+</body>
+</html>
