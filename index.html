@@ -3,278 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Canny – Cannabis neu gedacht</title>
-  <meta name="description" content="Canny wird neu gedacht. Eine moderne Plattform für die Cannabis-Community.">
-
+  <title>Canny — Mehr Zeit mit deinen Leuten.</title>
+  <meta name="description" content="Canny macht es einfach, mit Freundinnen und Freunden echte Pläne zu machen. Weniger organisieren. Mehr erleben.">
+  <meta property="og:title" content="Canny — Mehr Zeit mit deinen Leuten.">
+  <meta property="og:description" content="Aus „Wir müssen mal wieder“ wird „Bis Samstag“.">
+  <meta property="og:type" content="website">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      --bg: #f5f5ef;
-      --text: #172019;
-      --muted: #6d756e;
-      --green: #315c43;
-      --green-light: #dfe9df;
-      --white: #ffffff;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI",
-        sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-    }
-
-    .page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      width: 100%;
-      padding: 28px 5vw;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 25px;
-      font-weight: 800;
-      letter-spacing: -1px;
-    }
-
-    .logo span {
-      color: var(--green);
-    }
-
-    .badge {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--green);
-      background: var(--green-light);
-      padding: 9px 14px;
-      border-radius: 100px;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 70px 5vw 100px;
-    }
-
-    .hero {
-      width: 100%;
-      max-width: 920px;
-      text-align: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--green);
-      margin-bottom: 28px;
-    }
-
-    .dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--green);
-    }
-
-    h1 {
-      font-size: clamp(52px, 9vw, 105px);
-      line-height: .92;
-      letter-spacing: -5px;
-      font-weight: 800;
-      max-width: 900px;
-      margin: 0 auto 30px;
-    }
-
-    h1 span {
-      color: var(--green);
-    }
-
-    .intro {
-      max-width: 580px;
-      margin: 0 auto;
-      color: var(--muted);
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .card {
-      margin: 55px auto 0;
-      max-width: 540px;
-      padding: 26px;
-      background: var(--white);
-      border-radius: 20px;
-      border: 1px solid rgba(23, 32, 25, .07);
-      text-align: left;
-    }
-
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 18px;
-    }
-
-    .card-title {
-      font-weight: 700;
-      font-size: 15px;
-    }
-
-    .status {
-      font-size: 12px;
-      color: var(--green);
-      background: var(--green-light);
-      padding: 6px 10px;
-      border-radius: 100px;
-      font-weight: 600;
-    }
-
-    .progress {
-      height: 6px;
-      background: #edf0eb;
-      border-radius: 100px;
-      overflow: hidden;
-    }
-
-    .progress div {
-      width: 34%;
-      height: 100%;
-      background: var(--green);
-      border-radius: inherit;
-    }
-
-    .card-text {
-      margin-top: 15px;
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-
-    footer {
-      padding: 25px 5vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      color: #929892;
-      font-size: 12px;
-    }
-
-    footer nav {
-      display: flex;
-      gap: 14px;
-    }
-
-    footer a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    footer a:hover,
-    footer a:focus-visible {
-      color: var(--green);
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        padding: 22px 22px;
-      }
-
-      main {
-        padding: 50px 22px 80px;
-      }
-
-      h1 {
-        letter-spacing: -3px;
-      }
-
-      .intro {
-        font-size: 16px;
-      }
-
-      .card {
-        margin-top: 40px;
-      }
-    }
+    :root { --ink:#090a17; --panel:#14162b; --panel-2:#1d2040; --line:rgba(255,255,255,.13); --text:#f7f7ff; --muted:#b3b6cc; --blue:#5f74ff; --purple:#9d6bff; --magenta:#ff4ac8; --lime:#c9ff61; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--text); background:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:inherit; }
+    .page { overflow:hidden; }
+    .shell { width:min(1180px,calc(100% - 48px)); margin:auto; }
+    .nav { height:84px; display:flex; align-items:center; justify-content:space-between; position:relative; z-index:2; }
+    .brand { font-size:27px; font-weight:850; letter-spacing:-1.7px; text-decoration:none; }
+    .brand i { display:inline-block; width:8px; height:8px; background:var(--lime); border-radius:50%; margin:0 0 12px 2px; }
+    .nav-link { border:1px solid var(--line); border-radius:999px; padding:10px 15px; color:var(--muted); font-weight:650; font-size:14px; text-decoration:none; }
+    .hero { min-height:680px; padding:94px 0 80px; position:relative; isolation:isolate; display:flex; align-items:center; }
+    .hero:before { content:""; position:absolute; inset:0; z-index:-2; background:linear-gradient(90deg,#090a17 5%,rgba(9,10,23,.93) 34%,rgba(9,10,23,.35) 100%),url("assets/canny-friends.png") 72% center/cover; }
+    .hero:after { content:""; position:absolute; width:500px; height:500px; z-index:-1; border-radius:50%; background:radial-gradient(circle,rgba(116,93,255,.3),transparent 67%); left:-250px; top:100px; filter:blur(12px); }
+    .hero-copy { max-width:690px; }
+    .kicker { margin:0 0 22px; color:var(--lime); font-size:13px; font-weight:750; letter-spacing:.12em; text-transform:uppercase; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { margin-bottom:24px; max-width:700px; font-size:clamp(56px,8vw,106px); line-height:.91; letter-spacing:-.075em; }
+    h1 em { color:var(--lime); font-style:normal; }
+    .lead { max-width:500px; margin-bottom:34px; color:#dedff0; font-size:clamp(17px,2vw,20px); line-height:1.55; }
+    .button { display:inline-flex; align-items:center; gap:9px; color:#111425; background:var(--lime); border-radius:999px; padding:14px 21px; text-decoration:none; font-size:15px; font-weight:800; box-shadow:0 10px 35px rgba(201,255,97,.2); }
+    .button:after { content:"→"; font-size:20px; line-height:12px; }
+    section { padding:116px 0; }
+    .intro-grid { display:grid; grid-template-columns:1fr 1.3fr; gap:64px; align-items:start; }
+    .section-label { color:var(--magenta); font-size:13px; text-transform:uppercase; font-weight:800; letter-spacing:.12em; }
+    h2 { max-width:780px; margin-bottom:22px; font-size:clamp(40px,5.5vw,72px); letter-spacing:-.065em; line-height:.98; }
+    .copy { color:var(--muted); max-width:580px; font-size:18px; line-height:1.6; }
+    .problem { border-top:1px solid var(--line); }
+    .quote { margin:0; color:var(--text); font-size:clamp(30px,4vw,55px); line-height:1.05; letter-spacing:-.05em; }
+    .quote span { color:var(--purple); }
+    .flow-wrap { background:linear-gradient(140deg,#181a38,#10111f); border-block:1px solid var(--line); }
+    .flow-head { display:flex; justify-content:space-between; gap:30px; align-items:end; margin-bottom:52px; }
+    .flow { display:grid; grid-template-columns:repeat(5,1fr); position:relative; }
+    .flow:before { content:""; position:absolute; top:37px; left:8%; right:8%; height:1px; background:linear-gradient(90deg,var(--blue),var(--magenta),var(--lime)); opacity:.8; }
+    .step { position:relative; padding:0 15px 0 0; }
+    .step-nr { position:relative; z-index:1; width:74px; height:74px; border-radius:23px; display:grid; place-items:center; background:var(--panel-2); border:1px solid var(--line); color:var(--lime); font-size:16px; font-weight:850; }
+    .step:nth-child(2) .step-nr,.step:nth-child(4) .step-nr { color:var(--magenta); }
+    .step strong { display:block; margin-top:21px; font-size:17px; }
+    .step p { margin:7px 0 0; color:var(--muted); font-size:14px; line-height:1.45; }
+    .plan-card { margin-top:72px; padding:clamp(25px,5vw,48px); border:1px solid rgba(201,255,97,.48); border-radius:28px; background:radial-gradient(circle at 84% 20%,rgba(201,255,97,.19),transparent 33%),#181b30; display:flex; justify-content:space-between; align-items:center; gap:28px; }
+    .plan-card p { margin:0 0 8px; color:var(--lime); font-size:13px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+    .plan-card h3 { margin:0; font-size:clamp(34px,5vw,65px); letter-spacing:-.06em; }
+    .pill { display:inline-flex; flex:none; align-items:center; padding:12px 16px; border-radius:999px; background:var(--lime); color:#131622; font-weight:850; }
+    .features { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .feature { min-height:255px; padding:27px; border-radius:26px; background:var(--panel); border:1px solid var(--line); }
+    .feature:nth-child(2) { background:linear-gradient(155deg,#302662,#15172d); }
+    .feature:nth-child(3) { background:linear-gradient(155deg,#44224d,#18172b); }
+    .feature-icon { width:44px; height:44px; display:grid; place-items:center; margin-bottom:54px; border-radius:14px; background:rgba(255,255,255,.1); font-size:22px; }
+    .feature h3 { margin-bottom:8px; font-size:22px; letter-spacing:-.04em; }
+    .feature p { margin:0; color:var(--muted); line-height:1.5; }
+    .moment { padding:0; min-height:500px; display:flex; align-items:end; background:linear-gradient(0deg,rgba(9,10,23,.9),rgba(9,10,23,.04)),url("assets/canny-friends.png") center/cover; }
+    .moment-copy { padding:72px 0; max-width:660px; }
+    .moment h2 { margin:0; }
+    .preview { display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:clamp(32px,7vw,100px); }
+    .phone { width:min(100%,350px); min-height:600px; margin:auto; padding:12px; border-radius:47px; background:linear-gradient(140deg,#33375e,#080914); box-shadow:0 32px 70px rgba(0,0,0,.5); }
+    .phone-in { height:576px; padding:27px 20px; border-radius:37px; overflow:hidden; background:linear-gradient(155deg,#302c74,#15152e 58%,#0c0d1d); }
+    .app-top { display:flex; justify-content:space-between; color:#e9e8ff; font-size:13px; }
+    .app-top b { color:var(--lime); }
+    .event { margin-top:27px; padding:18px; border-radius:19px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.12); }
+    .event small,.activity small { color:#bfc0df; }
+    .event h3 { margin:8px 0 5px; font-size:26px; letter-spacing:-.05em; }
+    .avatars { margin-top:16px; display:flex; }
+    .avatar { width:29px; height:29px; margin-left:-6px; border:2px solid #494087; border-radius:50%; background:linear-gradient(135deg,var(--magenta),var(--purple)); }
+    .avatar:nth-child(2) { background:linear-gradient(135deg,#f3b96b,#fa5fc8); }.avatar:nth-child(3) { background:linear-gradient(135deg,#61ccff,#5f74ff); }.avatar:nth-child(4) { background:linear-gradient(135deg,var(--lime),#37a990); }
+    .activity { margin-top:17px; padding:16px; border-radius:16px; background:rgba(255,255,255,.06); }
+    .activity b { display:block; margin:7px 0 4px; }
+    .cta { text-align:center; padding:132px 0; background:radial-gradient(circle at center,rgba(106,76,255,.33),transparent 42%); }
+    .cta h2 { margin-inline:auto; }
+    .cta .copy { margin:0 auto 31px; }
+    footer { padding:27px 0 40px; display:flex; justify-content:space-between; gap:18px; border-top:1px solid var(--line); color:#9699b5; font-size:13px; }
+    footer nav { display:flex; gap:19px; } footer a { text-decoration:none; } footer a:hover { color:var(--lime); }
+    @media (max-width:760px) { .shell{width:min(100% - 36px,600px)} .nav{height:74px}.hero{min-height:680px;padding:80px 0 60px;align-items:start}.hero:before{background:linear-gradient(180deg,rgba(9,10,23,.74),#090a17 92%),url("assets/canny-friends.png") 67% center/cover}.intro-grid,.preview{grid-template-columns:1fr;gap:29px}.flow{grid-template-columns:1fr 1fr;gap:32px}.flow:before{display:none}.flow .step:last-child{grid-column:span 2}.features{grid-template-columns:1fr}.feature{min-height:auto}.feature-icon{margin-bottom:30px}.flow-head{display:block}.flow-head .copy{margin-top:15px}.plan-card{margin-top:45px;align-items:flex-start;flex-direction:column}.moment{min-height:540px}.moment-copy{padding:55px 0}.preview-copy{order:-1}footer{flex-direction:column}.phone{min-height:530px}.phone-in{height:506px} }
   </style>
 </head>
-
 <body>
-
   <div class="page">
-
-    <header>
-      <div class="logo">cann<span>y</span></div>
-      <div class="badge">Etwas Neues entsteht</div>
+    <header class="shell nav">
+      <a class="brand" href="index.html" aria-label="Canny Startseite">canny<i></i></a>
+      <a class="nav-link" href="#vormerken">Bald verfügbar</a>
     </header>
-
     <main>
       <section class="hero">
-
-        <div class="eyebrow">
-          <span class="dot"></span>
-          Canny wird neu gedacht
+        <div class="shell hero-copy">
+          <p class="kicker">Bring your friends back together</p>
+          <h1>Mehr Zeit mit <em>deinen Leuten.</em></h1>
+          <p class="lead">Canny macht es einfacher, aus „Wir müssen mal wieder was machen“ einen echten Plan zu machen.</p>
+          <a class="button" href="#vormerken">Bald verfügbar</a>
         </div>
-
-        <h1>
-          Cannabis.<br>
-          <span>Einfach anders.</span>
-        </h1>
-
-        <p class="intro">
-          Wir bauen Canny gerade von Grund auf neu.
-          Eine moderne Plattform für die Cannabis-Community –
-          mit Wissen, Austausch und einem bewussteren Umgang.
-        </p>
-
-        <div class="card">
-          <div class="card-top">
-            <div class="card-title">Neues Canny</div>
-            <div class="status">In Entwicklung</div>
-          </div>
-
-          <div class="progress">
-            <div></div>
-          </div>
-
-          <p class="card-text">
-            Wir arbeiten gerade an der nächsten Version.
-            Mehr gibt es schon bald.
-          </p>
-        </div>
-
       </section>
+      <section class="shell problem">
+        <div class="intro-grid">
+          <p class="section-label">Das Problem</p>
+          <div><h2>Man hat Freunde. Man sieht sie nur nicht oft genug.</h2><p class="copy">Zwischen Arbeit, Studium, Beziehungen und vollen Kalendern bleibt eine gute Idee oft genau das: eine Idee. Canny bringt sie in Bewegung.</p></div>
+        </div>
+      </section>
+      <section class="flow-wrap">
+        <div class="shell">
+          <div class="flow-head"><div><p class="section-label">So einfach</p><h2>Aus einer Idee wird ein echter Plan.</h2></div><p class="copy">Nicht mehr endlos im Gruppenchat schreiben. Sondern gemeinsam entscheiden und loslegen.</p></div>
+          <div class="flow">
+            <div class="step"><div class="step-nr">01</div><strong>Leute wählen</strong><p>Deine Freundesgruppe ist schon da.</p></div>
+            <div class="step"><div class="step-nr">02</div><strong>Idee starten</strong><p>Kino, Essen, Spieleabend oder raus.</p></div>
+            <div class="step"><div class="step-nr">03</div><strong>Zeit finden</strong><p>Alle stimmen kurz ab, was passt.</p></div>
+            <div class="step"><div class="step-nr">04</div><strong>Plan steht</strong><p>Ein Termin, ein gemeinsamer Plan.</p></div>
+            <div class="step"><div class="step-nr">05</div><strong>Treffen</strong><p>Weniger App. Mehr echtes Leben.</p></div>
+          </div>
+          <div class="plan-card"><div><p>Alle sind dabei</p><h3>Bis Samstag.</h3></div><span class="pill">Plan steht ✓</span></div>
+        </div>
+      </section>
+      <section class="shell">
+        <p class="section-label">Was Canny macht</p><h2>Alles, was zwischen „Lass mal“ und „Wir sehen uns“ passiert.</h2>
+        <div class="features">
+          <article class="feature"><div class="feature-icon">✦</div><h3>Gemeinsam planen</h3><p>Ideen teilen, Aktivitäten vorschlagen und ohne Hin und Her entscheiden.</p></article>
+          <article class="feature"><div class="feature-icon">◷</div><h3>Verfügbarkeit finden</h3><p>In wenigen Klicks sehen, wann eure Runde wirklich Zeit hat.</p></article>
+          <article class="feature"><div class="feature-icon">●</div><h3>Pläne erleben</h3><p>Ein zentraler Ort für den Plan, die Leute und alles, was dazugehört.</p></article>
+        </div>
+      </section>
+      <section class="moment"><div class="shell moment-copy"><p class="section-label">Nicht noch eine Social App</p><h2>Mehr echte Momente.<br>Weniger organisieren.</h2></div></section>
+      <section class="shell preview">
+        <div class="preview-copy"><p class="section-label">Dein gemeinsamer Plan</p><h2>Alles Wichtige. Genau dann, wenn ihr es braucht.</h2><p class="copy">Canny gibt euch einen klaren Ort für Ideen, Abstimmungen und euren nächsten Moment zusammen. Ohne Feed. Ohne Likes. Ohne endloses Scrollen.</p></div>
+        <div class="phone" aria-label="Vorschau der Canny App"><div class="phone-in"><div class="app-top"><span>Freitag, 19:30</span><b>canny</b></div><div class="event"><small>Plan steht</small><h3>Pizza &amp; Filmabend</h3><small>Samstag · 19:30 · bei Mia</small><div class="avatars"><span class="avatar"></span><span class="avatar"></span><span class="avatar"></span><span class="avatar"></span></div></div><div class="activity"><small>Als Nächstes</small><b>Wer bringt Snacks mit?</b><small>Jonas: „Ich kümmere mich 🍿“</small></div><div class="activity"><small>Sonntag?</small><b>Spaziergang am Fluss</b><small>2 von 4 haben Zeit</small></div></div></div>
+      </section>
+      <section id="vormerken" class="cta"><div class="shell"><p class="section-label">Canny kommt bald</p><h2>Bring deine Freunde wieder zusammen.</h2><p class="copy">Weniger „Wir müssen mal wieder“. Mehr „Bis Samstag“.</p><a class="button" href="mailto:canny_app@proton.me?subject=Canny%20vormerken">Jetzt vormerken</a></div></section>
     </main>
-
-    <footer>
-      <span>© 2026 Canny</span>
-      <nav aria-label="Rechtliche Hinweise">
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-      </nav>
-    </footer>
-
+    <footer class="shell"><span>© 2026 Canny</span><nav aria-label="Rechtliche Hinweise"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav></footer>
   </div>
-
 </body>
 </html>
